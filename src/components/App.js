@@ -1,5 +1,5 @@
 import React from 'react';
-import Comment from './CommentAuthor';
+import Comment from './Markdown';
 
 export default class SampleComponent extends React.Component {
   constructor(props) {
@@ -10,7 +10,7 @@ export default class SampleComponent extends React.Component {
     return (
       <div>
           <h1>Comments</h1>
-          <Comment author="hogehoge" children="piyopiyo"/>
+          <Comment author="hoge" children="***piyopiyo***"/>
       </div>
     );
   }
