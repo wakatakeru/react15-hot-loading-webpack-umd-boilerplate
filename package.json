@@ -1,0 +1,43 @@
+{
+  "scripts": {
+    "dev": "webpack-dev-server --progress --watch",
+    "build": "NODE_ENV=production webpack --progress"
+  },
+  "babel": {
+    "presets": [
+      [
+        "es2015",
+        {
+          "modules": false
+        }
+      ],
+      "stage-0",
+      "react"
+    ],
+    "plugins": [
+      "react-hot-loader/babel"
+    ]
+  },
+  "devDependencies": {
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-plugin-react-transform": "^2.0.2",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "css-loader": "^0.28.3",
+    "extract-text-webpack-plugin": "^2.1.0",
+    "file-loader": "^0.11.1",
+    "react-hot-loader": "v3.0.0-beta.6",
+    "style-loader": "^0.18.1",
+    "url-loader": "^0.5.8",
+    "webpack": "2",
+    "webpack-dev-server": "2"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.23.0",
+    "prop-types": "^15.5.10",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4"
+  }
+}
